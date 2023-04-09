@@ -1,0 +1,30 @@
+.contenedor-imagen {
+  position: relative;
+}
+
+.imagenHeader {
+  margin-top: 130px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 58, 64, 0.5);
+}
+
+.texto {
+  position: absolute;
+  top: 60%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.2;
+}

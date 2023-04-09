@@ -1,0 +1,19 @@
+.marcosDePantalla {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  margin-top: 5px;
+}
+
+.descripcionDelEspacio {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  margin-top: 5px;
+  font-family: "utec_roman";
+  text-align: justify;
+  /* propiedad de salto de linea */
+  word-wrap: break-word;
+  font-size: 15px;
+  margin: 10px 0 15px 0;
+}
