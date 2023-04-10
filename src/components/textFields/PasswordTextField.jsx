@@ -18,7 +18,6 @@ const PasswordTextField = ({ value, onChange, onBlur, touched, errors }) => {
     <Grid>
       <TextField
         fullWidth
-        variant="outlined"
         margin="normal"
         size="small"
         id="password"
@@ -31,6 +30,7 @@ const PasswordTextField = ({ value, onChange, onBlur, touched, errors }) => {
         error={touched && Boolean(errors)}
         helperText={touched && errors}
         autoComplete="current-password"
+        variant="standard"
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">

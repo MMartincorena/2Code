@@ -6,7 +6,6 @@ const EmailTextField = ({ value, onChange, onBlur, touched, errors }) => {
     <Grid>
       <TextField
         fullWidth
-        variant="outlined"
         size="small"
         margin="normal"
         type="email"
@@ -19,6 +18,8 @@ const EmailTextField = ({ value, onChange, onBlur, touched, errors }) => {
         error={touched && Boolean(errors)}
         helperText={touched && errors}
         autoComplete="current-email"
+        variant="standard"
+
       />
     </Grid>
   );
