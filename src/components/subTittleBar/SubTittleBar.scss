@@ -1,20 +1,79 @@
-.titulo {
-  position: relative;
+/* -------------------------------------------------------- */
+/* CELULARES - Estilos para pantallas con un ancho menor a 600px */
+@media (max-width: 600px) {
+  .titulo {
+    position: relative;
+  }
+
+  .fondo {
+    background-color: #343a40;
+    width: 100%;
+    border-radius: 0 32px 32px 0;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .textoTitulo {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 30px;
+  }
 }
 
-.fondo {
-  background-image: linear-gradient(90deg, #52eeff, #39b4ff);
-/*   width: 90%;
- */  border-radius: 0 32px 32px 0;
-  height: 35px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+/* -------------------------------------------------------- */
+/* TABLET - Estilos para pantallas con un ancho entre 768px y 1024px */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .titulo {
+    position: relative;
+  }
+
+  .fondo {
+    background-color: #343a40;
+    width: 85%;
+    border-radius: 0 32px 32px 0;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
+    margin-bottom: 2%;
+  }
+
+  .textoTitulo {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 30px;
+  }
 }
 
-.textoTitulo {
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-right: 25px;
+/* -------------------------------------------------------- */
+/* NOTEBOOK - Estilos para pantallas con un ancho mayor o igual a 1024px */
+@media (min-width: 1024px) {
+  .titulo {
+    position: relative;
+  }
+
+  .fondo {
+    background-color: #343a40;
+    width: 80%;
+    border-radius: 0 32px 32px 0;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
+    margin-bottom: 2%;
+  }
+
+  .textoTitulo {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 30px;
+  }
 }

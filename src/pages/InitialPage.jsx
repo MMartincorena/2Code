@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Navbar from "../components/navbar/Navbar";
 import TittleBar from "../components/tittleBar/tittleBar";
 import SubTittleBar from "../components/subTittleBar/SubTittleBar";
 import AccordionComponent from "../components/accordion/AccordionComponent";
@@ -8,15 +7,15 @@ import {
   estudiantes,
   textosDescriptivos,
 } from "../assets/static/texts/InitialPageTexts";
-import Video from "../components/videos/Video";
 
 import "./styles/InitialPage.scss";
+import Navbar from "../components/navbar/Navbar";
 import Portada from "../components/portada/Portada";
 
 const InitialPage = () => {
   /* useEffect el cual cambia el titulo de la página */
   useEffect(() => {
-    document.title = "Juniors";
+    document.title = "UTEC Jobs";
   }, []);
 
   const url = [
@@ -28,56 +27,28 @@ const InitialPage = () => {
     <>
       <Navbar />
       <Portada />
-      <div className="descripcionDelEspacio" id="Empresa">
-        {textosDescriptivos()[0].general}
+      <TittleBar titulo="UTEC Jobs" />
+      <div className="columnas">
+        <div className="descripcionDelEspacio" id="Empresa">
+          {textosDescriptivos()[0].general}
+        </div>
       </div>
 
-      <div className="zonas" >
-        <TittleBar titulo="EMPRESAS" />
-        <div className="descripcionDelEspacio">
-          {textosDescriptivos()[1].empresa}
-        </div>
-        <SubTittleBar subtitulo="Preguntas frecuentes" />
+      <TittleBar titulo="Preguntas frecuentes" />
 
-        <div className="marcosDePantalla" >
+      <div className="columnas">
+        <div className="marcosDePantalla">
+          <SubTittleBar subtitulo="Empresas" />
           <AccordionComponent datos={empresas()} />
         </div>
-      </div>
-
-      <hr />
-      
-      <div className="zonas" id="Estudiante">
-        <TittleBar titulo="ESTUDIANTES" />
-        <div className="descripcionDelEspacio">
-          {textosDescriptivos()[2].estudiante}
-        </div>
-        <SubTittleBar subtitulo="Preguntas frecuentes" />
 
         <div className="marcosDePantalla">
+          <SubTittleBar subtitulo="Estudiantes" />
           <AccordionComponent datos={estudiantes()} />
         </div>
       </div>
-      {/* 
-      <div className="zonas">
-        <div className="descripcionDelEspacio"></div>
-        <div className="marcosDePantalla">
-          <SubTittleBar subtitulo="Preparación del CV" />
-          {textosDescriptivos()[3].preparacionCV}
-          <Video url={url[0].url_Youtube} />
-        </div>
-      </div>
-
-      <div className="zonas">
-        <div className="descripcionDelEspacio"></div>
-        <div className="marcosDePantalla">
-          <SubTittleBar subtitulo="Perfil en LinkedIn" />
-          {textosDescriptivos()[4].preparacionLI}
-          <Video url={url[1].url_LinkedIn} />
-        </div>
-      </div> */}
     </>
   );
 };
 
 export default InitialPage;
- 

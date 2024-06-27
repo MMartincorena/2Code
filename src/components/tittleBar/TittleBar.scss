@@ -1,21 +1,82 @@
-.tituloPrincipal {
-  position: relative;
+/* -------------------------------------------------------- */
+/* CELULARES - Estilos para pantallas con un ancho menor a 600px */
+@media (max-width: 600px) {
+  .tituloPrincipal {
+    position: relative;
+  }
+
+  .fondoPrincipal {
+    width: 95%;
+    border-radius: 0 32px 32px 0;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #52eeff, #39b4ff);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .textoTituloPrincipal {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;
+  }
 }
 
-.fondoPrincipal {
-  background-image: linear-gradient(90deg, #6b6e70, #343a40);
-  width: 95%;
-  border-radius: 0 32px 32px 0;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 10px;
+/* -------------------------------------------------------- */
+/* TABLET - Estilos para pantallas con un ancho entre 768px y 1024px */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .tituloPrincipal {
+    position: relative;
+    margin-bottom: 2%;
+  }
+
+  .fondoPrincipal {
+    width: 90%;
+    border-radius: 0 32px 32px 0;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #52eeff, #39b4ff);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .textoTituloPrincipal {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;
+  }
 }
 
-.textoTituloPrincipal {
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-right: 25px;
+/* -------------------------------------------------------- */
+/* NOTEBOOK - Estilos para pantallas con un ancho mayor o igual a 1024px */
+@media (min-width: 1024px) {
+  .tituloPrincipal {
+    position: relative;
+    margin-bottom: 2%;
+  }
+
+  .fondoPrincipal {
+    width: 60%;
+    border-radius: 0 32px 32px 0;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #52eeff, #39b4ff);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .textoTituloPrincipal {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;
+  }
 }

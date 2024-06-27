@@ -1,3 +1,5 @@
+import { generalNavLinks } from "./DatosNavbar";
+import { Box } from "@mui/system";
 import {
   List,
   ListItem,
@@ -5,10 +7,6 @@ import {
   ListItemText,
   ListItemButton,
 } from "@mui/material";
-
-import { generalNavLinks } from "./DatosNavbar";
-
-import { Box } from "@mui/system";
 
 const NavListDrawer = () => {
   return (

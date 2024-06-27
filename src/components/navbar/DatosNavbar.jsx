@@ -1,27 +1,31 @@
 import AbcIcon from "@mui/icons-material/Abc";
-import AddLocationIcon from "@mui/icons-material/AddLocation";
-import AddTaskIcon from "@mui/icons-material/AddTask";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 
 export const generalNavLinks = [
-  { title: "Empresas", path: "/#Empresa", icon: <WorkIcon sx={{ color: '#fff' }}/> },
-  { title: "Estudiantes", path: "/#Estudiante", icon: <SchoolIcon sx={{ color: '#fff' }}/> },
-  { title: "Login", path: "/login", icon: <AddTaskIcon sx={{ color: '#fff' }}/> },
+  {
+    title: "Empresas",
+    path: "/loginEmpresa",
+    icon: <WorkIcon sx={{ color: "#fff" }} />,
+  },
+  {
+    title: "UTEC",
+    path: "/login",
+    icon: <SchoolIcon sx={{ color: "#fff" }} />,
+  },
 ];
 
 export const studentNavLinks = [
-  { title: "Home", path: "/", icon: <AbcIcon /> },
-  {
-    title: "Login",
-    path: "/login",
-    icon: <AddLocationIcon sx={{ color: "#fff" }} />,
-  },
-  { title: "Algo", path: "#", icon: <AddTaskIcon /> },
+  { title: "Perfil", path: "/profile", icon: <AbcIcon /> },
 ];
 
 export const businessNavLinks = [
-  { title: "Home", path: "/", icon: <AbcIcon /> },
-  { title: "Login", path: "/login", icon: <AddLocationIcon /> },
-  { title: "Algo", path: "#", icon: <AddTaskIcon /> },
+  { title: "Perfil", path: "/profile" },
+  { title: "Crear oferta", path: "/addOffer" },
+  { title: "Crear nuevo reclutador", path: "/addNewRecluter" },
+  { title: "Listar reclutadores", path: "/recluterList" },
+];
+
+export const adminNavLinks = [
+  { title: "Crear nuevo usuario", path: "/newUser" },
 ];

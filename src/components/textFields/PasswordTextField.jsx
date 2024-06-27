@@ -1,19 +1,7 @@
-import React, { useState } from "react";
-import {
-  Grid,
-  TextField,
-  IconButton,
-  InputAdornment,
-} from "@mui/material";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import React from "react";
+import { Grid, TextField } from "@mui/material";
 
 const PasswordTextField = ({ value, onChange, onBlur, touched, errors }) => {
-  const [showPassword, setShowPassword] = useState(false);
-  const handleShowPasswordClick = () => {
-    setShowPassword(!showPassword);
-  };
-
   return (
     <Grid>
       <TextField
@@ -23,7 +11,7 @@ const PasswordTextField = ({ value, onChange, onBlur, touched, errors }) => {
         id="password"
         name="password"
         label="Contraseña"
-        type={showPassword ? "text" : "password"}
+        type="password"
         value={value}
         onChange={onChange}
         onBlur={onBlur}
@@ -31,15 +19,6 @@ const PasswordTextField = ({ value, onChange, onBlur, touched, errors }) => {
         helperText={touched && errors}
         autoComplete="current-password"
         variant="standard"
-        InputProps={{
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton onClick={handleShowPasswordClick}>
-                {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
       />
     </Grid>
   );

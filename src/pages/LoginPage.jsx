@@ -38,49 +38,47 @@ const LoginPage = () => {
     <div className="backgroundPage">
       <div className="forma"></div>
       <div className="dataBoxBackground">
-        <div className="dataBox">
-          <div className="fondoLogo">
-            <img className="logo"
-              src="../../src/assets/static/images/logo_UTEC_LetraNegra.png"
-              alt="logo UTEC"
-            />
-          </div>
-          <SubTittleBar subtitulo="INGRESAR" ancho="98%" />
-          <div className="formulario">
-            <form action="" onSubmit={handleSubmit}>
-              <Grid>
-                <EmailTextField
-                  value={values.email}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  touched={touched.email}
-                  errors={errors.email}
-                />
-                <PasswordTextField
-                  value={values.password}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  touched={touched.password}
-                  errors={errors.password}
-                />
-              </Grid>
-              <Button
-                type="submit"
-                variant="contained"
-                fullWidth
-                sx={{ marginTop: "1rem" }}
-              >
-                Ingresar
-              </Button>
-              <Button
-                type="submit"
-                variant="contained"
-                fullWidth
-                sx={{ marginTop: "1rem" }}
-              >
-                Google
-              </Button>
-            </form>
+        <div className="recuatro">
+          <div className="imagenLogin"></div>
+          <div className="dataBox">
+            <div className="fondoLogo">
+              <img
+                className="logo"
+                src="../../src/assets/static/images/logo_UTEC_LetraNegra.png"
+                alt="logo UTEC"
+              />
+            </div>
+            <SubTittleBar subtitulo="BIENVENIDO" ancho="98%" />
+
+            {/* ----------- FORMULARIO ----------- */}
+            <div className="formulario">
+              <form action="" onSubmit={handleSubmit}>
+                <Grid>
+                  <EmailTextField
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    touched={touched.email}
+                    errors={errors.email}
+                  />
+                  <PasswordTextField
+                    value={values.password}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    touched={touched.password}
+                    errors={errors.password}
+                  />
+                </Grid>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  fullWidth
+                  sx={{ marginTop: "1rem" }}
+                >
+                  Ingresar
+                </Button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
