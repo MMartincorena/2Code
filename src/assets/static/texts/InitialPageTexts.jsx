@@ -11,14 +11,6 @@ export const textosDescriptivos = () => [
     estudiante:
       "Conecta a los estudiantes de UTEC con las empresas en busca de oportunidades laborales sería una plataforma en línea en la que se puedan buscar ofertas de empleo y establecer conexiones directas con las empresas, con recursos y herramientas para ayudar a los estudiantes a prepararse para el mercado laboral y relaciones de mentoría para el desarrollo de habilidades y el aprendizaje continuo.",
   },
-  {
-    preparacionCV:
-    "Holisss"
-  },
-  {
-    preparacionLI:
-    "Holisss 2"
-  },
 ];
 
 export const empresas = () => [

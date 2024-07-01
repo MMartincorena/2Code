@@ -9,44 +9,17 @@
   .descripcionDelEspacio {
     width: 100%;
     height: auto;
-    padding: 0 15px;
     margin-top: 5px;
-    font-family: "utec_roman";
     text-align: justify;
     /* propiedad de salto de linea */
     word-wrap: break-word;
     font-size: 15px;
-    margin: 10px 0 15px 0;
   }
 }
 
 /* -------------------------------------------------------- */
 /* TABLET - Estilos para pantallas con un ancho entre 768px y 1024px */
 @media (min-width: 601px) and (max-width: 1023px) {
-  .marcosDePantalla {
-    width: 100%;
-    height: auto;
-    padding: 0 5%;
-    margin-top: 5px;
-    margin-bottom: 3%;
-  }
-
-  .descripcionDelEspacio {
-    width: 100%;
-    height: auto;
-    padding: 0 5%;
-    margin-top: 5px;
-    font-family: "utec_roman";
-    text-align: justify;
-    /* propiedad de salto de linea */
-    word-wrap: break-word;
-    font-size: 15px;
-  }
-}
-
-/* -------------------------------------------------------- */
-/* NOTEBOOK - Estilos para pantallas con un ancho mayor o igual a 1024px */
-@media (min-width: 1024px) {
   .marcosDePantalla {
     width: 48%;
     height: auto;
@@ -57,19 +30,40 @@
   .descripcionDelEspacio {
     width: 100%;
     height: auto;
-    padding: 0 5%;
-    margin-top: 5px;
-    font-family: "utec_roman";
     text-align: justify;
     /* propiedad de salto de linea */
     word-wrap: break-word;
     font-size: 15px;
   }
 
-  .columnas{
+  .columnas {
     display: flex;
-    padding: 0 5%;
     justify-content: space-between;
+    padding: 0 5%;
+  }
+}
+
+/* -------------------------------------------------------- */
+/* NOTEBOOK - Estilos para pantallas con un ancho mayor o igual a 1024px */
+@media (min-width: 1024px) {
+  .marcosDePantalla {
+    width: 48%;
+    height: auto;
+    margin-bottom: 3%;
   }
 
+  .descripcionDelEspacio {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    /* propiedad de salto de linea */
+    word-wrap: break-word;
+    font-size: 15px;
+  }
+
+  .columnas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+  }
 }

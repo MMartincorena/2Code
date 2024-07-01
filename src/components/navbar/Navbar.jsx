@@ -1,19 +1,27 @@
+/** @jsxImportSource @emotion/react */
 import NavListDrawer from "./NavListDrawer";
 import Drawer from "@mui/material/Drawer";
 import { useState } from "react";
 import { AppBar, Toolbar, IconButton, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-
 import { Box } from "@mui/system";
 import { generalNavLinks } from "./DatosNavbar";
-import "./styles/Navbar.scss";
 import { useNavigate } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+import {
+  appBarStyles,
+  iconButtonStyles,
+  menuIconStyles,
+  navButtonsStyles,
+  navButtonStyles,
+  navButtonTextStyles,
+  logoStyles
+} from "./styles/NavbarStyles";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  /* Hook el cual */
   const navigate = useNavigate();
 
   const onLogout = () => {
@@ -30,67 +38,37 @@ const Navbar = () => {
     },
   });
 
-  /* HACER */
-  /* Arreglar la forma del boton de icono de desplegar opciones */
-
   return (
     <>
       <ThemeProvider theme={theme}>
-        <AppBar
-          position="fixed"
-          sx={{
-            height: "100px",
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            padding: "0 5% ",
-            borderBottom:" 2px solid #00C7FF",
-            boxShadow: "0px 2px 4px 0px rgba(0, 0, 0, 0.35)",
-          }}
-        >
+        <AppBar position="fixed" css={appBarStyles}>
           <img
             src="../../src/assets/static/images/UTEC_LOGO.png"
             alt="Description of the image"
-            className="logo_UTEC"
+            css={logoStyles}
           />
           <Toolbar>
             <IconButton
               color="inherit"
               fontSize="large"
               onClick={() => setOpen(true)}
-              sx={{
-                display: {
-                  xs: "flex",
-                  sm: "none",
-                },
-              }}
+              css={iconButtonStyles}
               edge="start"
             >
-              <MenuIcon
-                fontSize="large"
-                sx={{
-                  padding: "0",
-                  margin: "0",
-                }}
-              />
+              <MenuIcon fontSize="large" css={menuIconStyles} />
             </IconButton>
 
-            {/* esta linea hace que todo el contenido de box se ajuste al tamaño de la pantalla */}
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box css={navButtonsStyles}>
               {generalNavLinks.map((item) => (
                 <Button
-                  sx={{
-                    marginLeft: "20px",
-                  }}
                   color="inherit"
                   key={item.title}
                   component="a"
                   href={item.path}
+                  css={navButtonStyles}
                 >
-                  <span style={{ marginRight: "8px", fontSize: "18px" }}>{item.icon}</span>
-                  <span style={{ fontSize: "18px" }}>{item.title}</span>
-                  
+                  <span css={navButtonTextStyles}>{item.icon}</span>
+                  <span css={navButtonTextStyles}>{item.title}</span>
                 </Button>
               ))}
             </Box>

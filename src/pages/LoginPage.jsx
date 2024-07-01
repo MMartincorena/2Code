@@ -2,11 +2,9 @@ import React, { useEffect } from "react";
 import { Grid, Button } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import EmailTextField from "../components/textFields/EmailTextField";
-import PasswordTextField from "../components/textFields/PasswordTextField";
 
 import "./styles/LoginPage.scss";
-import SubTittleBar from "../components/subTittleBar/SubTittleBar";
+import { EmailTextField, PasswordTextField } from "../components/textFields";
 
 const LoginPage = () => {
   useEffect(() => {
@@ -48,7 +46,12 @@ const LoginPage = () => {
                 alt="logo UTEC"
               />
             </div>
-            <SubTittleBar subtitulo="BIENVENIDO" ancho="98%" />
+            {/* TittleBar */}
+            <div className="tituloPrincipal">
+              <div className="fondoPrincipal">
+                <div className="textoTituloPrincipal"> Bienvenido </div>
+              </div>
+            </div>
 
             {/* ----------- FORMULARIO ----------- */}
             <div className="formulario">
@@ -73,7 +76,7 @@ const LoginPage = () => {
                   type="submit"
                   variant="contained"
                   fullWidth
-                  sx={{ marginTop: "1rem" }}
+                  sx={{ marginTop: "16px" }}
                 >
                   Ingresar
                 </Button>

@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./style.scss";
 
-const AccordionComponent = ({ datos }) => {
+const AccordionComp = ({ datos }) => {
   return (
     <>
       {datos.map((dato) => (
@@ -27,7 +27,7 @@ const AccordionComponent = ({ datos }) => {
               borderTop: "2px solid #00c7ff",
             }}
           >
-            <Typography sx={{ fontFamily: "utec_roman", fontSize: "16px" }}>
+            <Typography >
               {dato.titulo}
             </Typography>
           </AccordionSummary>
@@ -42,4 +42,4 @@ const AccordionComponent = ({ datos }) => {
   );
 };
 
-export default AccordionComponent;
+export default AccordionComp;

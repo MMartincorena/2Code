@@ -1,4 +1,4 @@
-import "./SubTittleBar.scss";
+import "./styles/SubTittleBar.scss";
 
 const SubTittleBar = ({ subtitulo, ancho }) => {
   return (

@@ -1,16 +1,15 @@
 import { useEffect } from "react";
-import TittleBar from "../components/tittleBar/tittleBar";
-import SubTittleBar from "../components/subTittleBar/SubTittleBar";
-import AccordionComponent from "../components/accordion/AccordionComponent";
 import {
   empresas,
   estudiantes,
   textosDescriptivos,
 } from "../assets/static/texts/InitialPageTexts";
 
-import "./styles/InitialPage.scss";
 import Navbar from "../components/navbar/Navbar";
 import Portada from "../components/portada/Portada";
+import { SubTittleBar, TittleBar } from "../components/bars";
+import AccordionComp from "../components/accordion/AccordionComp";
+import "./styles/InitialPage.scss";
 
 const InitialPage = () => {
   /* useEffect el cual cambia el titulo de la página */
@@ -29,8 +28,10 @@ const InitialPage = () => {
       <Portada />
       <TittleBar titulo="UTEC Jobs" />
       <div className="columnas">
-        <div className="descripcionDelEspacio" id="Empresa">
-          {textosDescriptivos()[0].general}
+        <div className="marcosDePantalla">
+          <div className="descripcionDelEspacio" id="Empresa">
+            {textosDescriptivos()[0].general}
+          </div>
         </div>
       </div>
 
@@ -39,12 +40,12 @@ const InitialPage = () => {
       <div className="columnas">
         <div className="marcosDePantalla">
           <SubTittleBar subtitulo="Empresas" />
-          <AccordionComponent datos={empresas()} />
+          <AccordionComp datos={empresas()} />
         </div>
 
         <div className="marcosDePantalla">
           <SubTittleBar subtitulo="Estudiantes" />
-          <AccordionComponent datos={estudiantes()} />
+          <AccordionComp datos={estudiantes()} />
         </div>
       </div>
     </>
