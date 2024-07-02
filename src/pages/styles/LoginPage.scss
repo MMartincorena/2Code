@@ -35,8 +35,6 @@
     background-color: #fff;
     border-radius: 5px;
     border: 1px solid #ffffff;
-    -webkit-box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
-    -moz-box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
     box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
     display: flex;
     align-items: stretch;
@@ -85,7 +83,7 @@
     margin-right: 10%;
   }
 }
-/* -------------------------------------------------------- */
+
 /* TABLET - Estilos para pantallas con un ancho entre 768px y 1024px */
 @media (min-width: 601px) and (max-width: 1023px) {
   .backgroundPage {
@@ -124,8 +122,6 @@
     padding: 1vh;
     border-radius: 5px;
     border: 1px solid #ffffff;
-    -webkit-box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
-    -moz-box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
     box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
   }
 
@@ -138,12 +134,10 @@
     align-items: stretch;
     flex-direction: column;
     justify-content: center;
-    /*     padding: 15px 0 15px 15px;
- */
     background-image: url("../../assets/static/images/imageUTEC.jpeg");
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .dataBox {
@@ -198,7 +192,6 @@
   }
 }
 
-/* -------------------------------------------------------- */
 /* Estilos para pantallas con un ancho mayor o igual a 1024px */
 @media (min-width: 1024px) {
   .backgroundPage {
@@ -239,8 +232,6 @@
     padding: 6px;
     border-radius: 5px;
     border: 1px solid #ffffff;
-    -webkit-box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
-    -moz-box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
     box-shadow: 0px 0px 10px -1px rgba(65, 63, 63, 0.75);
   }
 
@@ -254,9 +245,9 @@
     flex-direction: column;
     justify-content: center;
     background-image: url("../../assets/static/images/imageUTEC.jpeg");
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .dataBox {

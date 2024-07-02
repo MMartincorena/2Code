@@ -23,18 +23,14 @@ const AccordionComp = ({ datos }) => {
             aria-controls="panel1a-content"
             id="panel1a-header"
             sx={{
-              backgroundColor: "rgba(0,0,0,.03)",
+              backgroundColor: "rgba(0,0,0,.05)",
               borderTop: "2px solid #00c7ff",
             }}
           >
-            <Typography >
-              {dato.titulo}
-            </Typography>
-          </AccordionSummary>
+            <Typography>{dato.titulo}</Typography>
+          </AccordionSummary >
           <AccordionDetails>
-            <Typography sx={{ fontFamily: "utec_roman", fontSize: "16px" }}>
-              {dato.descripcion}
-            </Typography>
+            <Typography  component="div">{dato.descripcion}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}

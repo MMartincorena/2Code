@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "utec_black";
+  src: url("./src/assets/static/fonts/utec_black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "utec_gruesa";
+  src: url("./src/assets/static/fonts/utec_gruesa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "utec_heavy";
+  src: url("./src/assets/static/fonts/utec_heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "utec_light";
+  src: url("./src/assets/static/fonts/utec_light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "utec-liviana";
+  src: url("./src/assets/static/fonts/utec_liviana.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "utec_roman";
+  src: url("./src/assets/static/fonts/utec_roman.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}

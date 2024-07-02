@@ -5,7 +5,8 @@ import * as Yup from "yup";
 
 import "./styles/LoginPage.scss";
 import { EmailTextField, PasswordTextField } from "../components/textFields";
-
+/* import ThemeSwitcher from "../components/switch/ThemeSwitcher";
+ */
 const LoginPage = () => {
   useEffect(() => {
     document.title = "Iniciar sesión";
@@ -46,7 +47,8 @@ const LoginPage = () => {
                 alt="logo UTEC"
               />
             </div>
-            {/* TittleBar */}
+{/*             <ThemeSwitcher />
+ */}            {/* TittleBar */}
             <div className="tituloPrincipal">
               <div className="fondoPrincipal">
                 <div className="textoTituloPrincipal"> Bienvenido </div>

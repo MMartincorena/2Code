@@ -10,6 +10,8 @@ import Portada from "../components/portada/Portada";
 import { SubTittleBar, TittleBar } from "../components/bars";
 import AccordionComp from "../components/accordion/AccordionComp";
 import "./styles/InitialPage.scss";
+import ThemeSwitcher from "../components/switch/ThemeSwitcher";
+import { Typography } from "@mui/material";
 
 const InitialPage = () => {
   /* useEffect el cual cambia el titulo de la página */
@@ -30,13 +32,14 @@ const InitialPage = () => {
       <div className="columnas">
         <div className="marcosDePantalla">
           <div className="descripcionDelEspacio" id="Empresa">
-            {textosDescriptivos()[0].general}
+            <Typography>{textosDescriptivos()[0].general}</Typography>
           </div>
         </div>
       </div>
 
-      <TittleBar titulo="Preguntas frecuentes" />
+      <ThemeSwitcher />
 
+      <TittleBar titulo="Preguntas frecuentes" />
       <div className="columnas">
         <div className="marcosDePantalla">
           <SubTittleBar subtitulo="Empresas" />
